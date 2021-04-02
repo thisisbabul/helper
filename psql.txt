@@ -1,0 +1,2 @@
+sudo -u postgres psql //entry query
+ALTER USER postgres PASSWORD 'std123' //change user password
