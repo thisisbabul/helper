@@ -1,0 +1,17 @@
+//install curl
+sudo apt install curl
+
+//adding screen resolution
+sudo cvt 1280 1024 63
+sudo xrandr --newmode "1280x1024_63.00"  114.50  1280 1368 1496 1712  1024 1027 1034 1064 -hsync +vsync
+sudo xrandr -q
+sudo xrandr --addmode VGA-1 1280x1024_63.00
+
+//usb boot
+lsblk
+sudo umount /dev/sdb
+sudo dd if=isofile of=/dev/sdb bs=1M
+sudo eject /dev/sdb
+
+//install and uninstall lamp server
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
