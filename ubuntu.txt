@@ -15,3 +15,13 @@ sudo eject /dev/sdb
 
 //install and uninstall lamp server
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
+//install wget
+sudo apt install wget
+
+//version check wget
+wget --version
+
+//install google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
