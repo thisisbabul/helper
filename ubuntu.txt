@@ -25,3 +25,10 @@ wget --version
 //install google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+//Instal unity desktop
+sudo apt install ubuntu-unity-desktop
+
+//remove the unity desktop
+sudo apt purge unity-session unity
+sudo apt autoremove
