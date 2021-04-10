@@ -1,0 +1,5 @@
+//create routing
+ng generate module app-routing --flat --module=app
+
+//create service
+ng generate service hero
