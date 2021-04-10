@@ -36,3 +36,9 @@ sudo apt autoremove
 //install skype
 wget https://go.skype.com/skypeforlinux-64.deb
 sudo apt install ./skypeforlinux-64.deb
+
+//install grails
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install grails //for latest version
+sdk install grails 2.4.3 //for specific version
