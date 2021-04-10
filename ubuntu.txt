@@ -32,3 +32,7 @@ sudo apt install ubuntu-unity-desktop
 //remove the unity desktop
 sudo apt purge unity-session unity
 sudo apt autoremove
+
+//install skype
+wget https://go.skype.com/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
