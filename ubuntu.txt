@@ -1,3 +1,8 @@
+//before installing packages
+sudo apt update
+sudo apt dist-upgrade
+sudo apt autoremove
+
 //install curl
 sudo apt install curl
 
