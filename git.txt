@@ -6,4 +6,7 @@ git --version
 
 //set global user name and email
 git config --global user.name "babul145"
-git config --global user.email "babul.cu.cse35"
+git config --global user.email "babul.cu.cse35@gmail.com"
+
+//list global git settings
+git config --list
