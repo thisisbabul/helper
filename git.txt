@@ -1,0 +1,9 @@
+//install
+sudo apt install git
+
+//checking for a git version
+git --version
+
+//set global user name and email
+git config --global user.name "babul145"
+git config --global user.email "babul.cu.cse35"
