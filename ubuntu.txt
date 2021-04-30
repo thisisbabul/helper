@@ -51,3 +51,9 @@ sdk install grails 2.4.3 //for specific version
 //install teamviewer
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
+
+//power off using the terminal
+shutdown //tt will give 1 minute
+sudo shutdown -P now //without any delay
+shutdown +5 //fix delay time
+shutdown -c //cancel shutdown
