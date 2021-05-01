@@ -57,3 +57,6 @@ shutdown //tt will give 1 minute
 sudo shutdown -P now //without any delay
 shutdown +5 //fix delay time
 shutdown -c //cancel shutdown
+
+//access share folder by ubuntu
+smb://192.168.43.172
