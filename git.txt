@@ -10,3 +10,17 @@ git config --global user.email "babul.cu.cse35@gmail.com"
 
 //list global git settings
 git config --list
+
+//pull & merge
+git pull; git merge remotes/origin/master
+
+//Reset last push
+git reset --hard HEAD~1
+git push -f <remote> <branch>
+(Example push: git push -f origin bugfix/bug123)
+
+//When getting merge error
+git merge --abort
+
+//revert last local commit
+git reset HEAD~
