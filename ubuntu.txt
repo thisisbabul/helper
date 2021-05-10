@@ -63,3 +63,6 @@ smb://192.168.43.172
 
 //extracting tar.gz file
 tar -xf archive.tar.gz -C /home/linuxize/files
+
+//extracting tar.gz file
+tar -xf archive.tar.gz -C /home/linuxize/files
