@@ -1,3 +1,5 @@
+https://www.npmjs.com/package/@angular/cli
+
 //install angular
 npm install -g @angular/cli
 
@@ -10,6 +12,12 @@ ng --version
 //uninstall angular
 npm uninstall -g angular-cli
 npm cache clean
+
+//create new project
+ng new PROJECT-NAME
+
+//run project
+ng serve --host 0.0.0.0 --port 4201
 
 //create routing
 ng generate module app-routing --flat --module=app
