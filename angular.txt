@@ -1,3 +1,9 @@
+//install angular
+npm install -g @angular/cli
+
+//check version
+ng --version
+
 //create routing
 ng generate module app-routing --flat --module=app
 
