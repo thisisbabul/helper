@@ -7,6 +7,10 @@ npm install -g @angular/cli@wished.version.here
 //check version
 ng --version
 
+//uninstall angular
+npm uninstall -g angular-cli
+npm cache clean
+
 //create routing
 ng generate module app-routing --flat --module=app
 
