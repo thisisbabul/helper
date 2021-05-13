@@ -1,6 +1,9 @@
 //install angular
 npm install -g @angular/cli
 
+//install an angular-cli specific version
+npm install -g @angular/cli@wished.version.here
+
 //check version
 ng --version
 
