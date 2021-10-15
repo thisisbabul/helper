@@ -73,3 +73,6 @@ java -version //check java version
 
 //install deb file
 sudo dpkg -i path_to_deb_file
+
+//start applications automatically?
+https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
