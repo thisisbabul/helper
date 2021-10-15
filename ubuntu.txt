@@ -63,3 +63,13 @@ smb://192.168.43.172
 
 //extracting tar.gz file
 tar -xf archive.tar.gz -C /home/linuxize/files
+
+//set java environment path
+sudo gedit ~/.bashrc //open file where need write following text
+JAVA_HOME=/usr/lib/jvm/YOUR_JAVA_VERSION
+export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_HOME
+java -version //check java version
+
+//install deb file
+sudo dpkg -i path_to_deb_file
