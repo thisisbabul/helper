@@ -1,2 +1,8 @@
 //check version
 mysqld --version
+
+//db command
+http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm
+
+//change root password
+https://linuxhint.com/change-mysql-root-password-ubuntu/
