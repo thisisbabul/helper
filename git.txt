@@ -24,3 +24,6 @@ git merge --abort
 
 //revert last local commit
 git reset HEAD~
+
+//add ssh key
+https://www.youtube.com/watch?v=jfi9n4y-WFo
