@@ -81,3 +81,9 @@ https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-
 https://github.com/nodesource/distributions/blob/master/README.md //need see before installation
 curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+//install gitlab
+https://www.youtube.com/watch?v=ydzZJZBvE2o
+
+//check ubuntu release version
+lsb_release -a
