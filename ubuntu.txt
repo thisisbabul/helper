@@ -84,6 +84,7 @@ sudo apt-get install -y nodejs
 
 //install gitlab
 https://www.youtube.com/watch?v=ydzZJZBvE2o
+https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/gitlab-ce_14.3.3-ce.0_amd64.deb
 
 //check ubuntu release version
 lsb_release -a
