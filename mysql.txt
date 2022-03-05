@@ -8,3 +8,6 @@ http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm
 sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'; //for MySQL
 ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root'); //for MariaDB
+
+//access mysql db
+mysql -u root -p
