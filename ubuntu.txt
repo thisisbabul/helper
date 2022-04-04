@@ -88,3 +88,9 @@ https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/gitlab-ce_14.
 
 //check ubuntu release version
 lsb_release -a
+
+//install wine
+https://linuxize.com/post/how-to-install-wine-on-ubuntu-20-04/
+
+//remove wine completely
+https://askubuntu.com/questions/15551/how-to-remove-wine-completely
