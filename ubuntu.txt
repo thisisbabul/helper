@@ -1,3 +1,6 @@
+//show installed software
+apt list --installed
+
 //before installing packages
 sudo apt update
 sudo apt dist-upgrade
