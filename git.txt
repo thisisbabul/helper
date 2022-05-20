@@ -40,3 +40,6 @@ git push -u origin main
 git remote add origin https://github.com/babul145/test.git
 git branch -M main
 git push -u origin main
+
+//set new git url
+git remote set-url origin new.git.url/here
