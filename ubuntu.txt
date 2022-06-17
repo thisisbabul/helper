@@ -106,3 +106,12 @@ ps -u
 
 //kill a process
 kill PID
+
+//show loop devices
+losetup
+
+//for specific loop with json data
+losetup --json --list /dev/loop0
+
+//format pendrive
+https://linuxhint.com/format_usb_drive_linux/
