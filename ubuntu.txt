@@ -100,3 +100,9 @@ https://askubuntu.com/questions/15551/how-to-remove-wine-completely
 
 //list hardrive
 lsblk or df
+
+//show all running process
+ps -u
+
+//kill a process
+kill PID
