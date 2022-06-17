@@ -115,3 +115,6 @@ losetup --json --list /dev/loop0
 
 //format pendrive
 https://linuxhint.com/format_usb_drive_linux/
+
+//boot pendrive
+https://linuxconfig.org/create-bootable-ubuntu-22-04-usb-startup-disk
