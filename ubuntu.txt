@@ -97,3 +97,6 @@ https://linuxize.com/post/how-to-install-wine-on-ubuntu-20-04/
 
 //remove wine completely
 https://askubuntu.com/questions/15551/how-to-remove-wine-completely
+
+//list hardrive
+lsblk or df
