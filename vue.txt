@@ -1,2 +1,5 @@
+//install vue js in ubuntu
+https://linuxhint.com/install-vue-ubuntu/
+
 //create vue project
 vue create hello-world
