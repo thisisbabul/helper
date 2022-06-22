@@ -43,3 +43,6 @@ git push -u origin main
 
 //set new git url
 git remote set-url origin new.git.url/here
+
+//local changes tab in intellij idea
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/360008229959-Version-control-local-changes-tab-missing-in-2020-1
