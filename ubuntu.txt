@@ -101,8 +101,8 @@ https://askubuntu.com/questions/15551/how-to-remove-wine-completely
 //list hardrive
 lsblk / df / fdisk -l
 
-//show all running process
-ps -u
+//show all running process https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/
+ps aux
 
 //kill a process
 kill PID
