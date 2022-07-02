@@ -1,0 +1,10 @@
+Google Chrome
+Wine
+Apache
+MySQL
+Intellij with Java
+Java environment path
+Git
+Node
+Vue JS
+Curl

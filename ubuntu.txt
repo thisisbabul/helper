@@ -118,3 +118,9 @@ https://linuxhint.com/format_usb_drive_linux/
 
 //boot pendrive
 https://linuxconfig.org/create-bootable-ubuntu-22-04-usb-startup-disk
+
+//install mysql
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+
+//install apache
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04
