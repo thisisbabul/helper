@@ -1,10 +1,43 @@
-Google Chrome
-Wine
-Apache
-MySQL
-Intellij with Java
-Java environment path
-Git
-Node
-Vue JS
-Curl
+//Google Chrome
+download google chrome and install by this command "sudo dpkg -i deb_file"
+
+//Wine
+sudo apt install wine-stable
+sudo wine sqlyog_fine
+
+//Apache
+sudo apt update
+sudo apt install apache2
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04
+
+//MySQL
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
+//Java
+sudo apt install ./deb_file
+sudo gedit ~/.bashrc //open file where need write following text
+JAVA_HOME=/usr/lib/jvm/YOUR_JAVA_VERSION
+export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_HOME
+java -version //check java version
+
+//Intellij Idea
+https://www.jetbrains.com/idea/download/other.html
+https://www.evernote.com/client/web?_sourcePage=gsep8DSR9MviMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP&__fp=q1RX555AbAg3yWPvuidLz-TPR6I9Jhx8&hpts=1660581029455&showSwitchService=true&usernameImmutable=false&login=&login=Sign+in&login=true&hptsh=Z2aoPjv8ChRrLz2%2FQvxhVq6fnRM%3D#?n=4b6c88cb-eebc-4c65-bee8-b78c1b238234&
+
+//Git
+https://github.com/babul145/helper/blob/master/git.txt
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+//Node
+https://github.com/nodesource/distributions/blob/master/README.md //need see before installation
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt install npm
+
+//Vue JS
+https://cli.vuejs.org/guide/installation.html
+
+//Curl
+sudo apt install curl
