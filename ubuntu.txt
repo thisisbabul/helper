@@ -103,6 +103,7 @@ lsblk / df / fdisk -l
 
 //show all running process https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/
 ps aux
+sudo ps -aux | less //more details
 
 //kill a process
 kill PID
