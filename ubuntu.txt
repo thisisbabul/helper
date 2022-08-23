@@ -125,3 +125,6 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-
 
 //install apache
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04
+
+//enable internet with bridge adapter in virtualbox
+https://www.youtube.com/watch?v=nx4kBtKS9Bw
