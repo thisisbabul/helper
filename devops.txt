@@ -1,0 +1,27 @@
+//install redmine
+https://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_50x_on_Ubuntu_2004_with_Apache2
+https://phoenixnap.com/kb/mysql-remote-connection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
