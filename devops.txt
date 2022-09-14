@@ -2,6 +2,10 @@
 https://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_50x_on_Ubuntu_2004_with_Apache2
 https://phoenixnap.com/kb/mysql-remote-connection
 
+//install & backup gitlab
+https://www.how2shout.com/linux/install-gitlab-on-ubuntu-20-04-lts-focal-fossa-linux/
+https://linuxhint.com/installing_gitlab_ubuntu/
+https://www.tutorialspoint.com/gitlab/gitlab_create_backup.htm
 
 
 
