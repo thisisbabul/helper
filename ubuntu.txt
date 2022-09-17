@@ -128,3 +128,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-s
 
 //enable internet with bridge adapter in virtualbox
 https://www.youtube.com/watch?v=nx4kBtKS9Bw
+
+//Pending update of "snap-store" 
+sudo killall snap-store
+sudo snap refresh
