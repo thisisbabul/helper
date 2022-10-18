@@ -1,0 +1,18 @@
+//install
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+//version
+docker version
+
+//machine version
+docker-machine version
+
+//compose version
+docker-compose version
+
+//images
+docker images
+
+//building an image
+docker build -t <image-name> <location-of-docker-file>
+docker build -t my-httpd .

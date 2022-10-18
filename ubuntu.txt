@@ -132,3 +132,6 @@ https://www.youtube.com/watch?v=nx4kBtKS9Bw
 //Pending update of "snap-store" 
 sudo killall snap-store
 sudo snap refresh
+
+//kernel version
+uname -r
