@@ -4,10 +4,14 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 //version
 docker version
 
+//permission
+sudo chmod 666 /var/run/docker.sock
+
 //machine version
 docker-machine version
 
-//compose version
+//compose intall & version
+https://phoenixnap.com/kb/install-docker-compose-on-ubuntu-20-04
 docker-compose version
 
 //images
