@@ -7,7 +7,8 @@ docker version
 //permission
 sudo chmod 666 /var/run/docker.sock
 
-//machine version
+//machine install & version
+sudo snap install docker
 docker-machine version
 
 //compose intall & version
@@ -20,3 +21,49 @@ docker images
 //building an image
 docker build -t <image-name> <location-of-docker-file>
 docker build -t my-httpd .
+
+//inspect image
+docker inspect <image-id>
+docker inspect 80711683715a
+
+//running a container from image
+docker run -itd --name <container-name> -p <host-port>:<port-in-container> image-name:tag
+docker run -itd --name my-http-container-1 -p 5555:80 my-httpd:latest
+
+//containers
+docker ps
+
+//all containers
+docker ps -a
+
+//inspect container
+docker inspect <container-id>
+
+//container logs
+docker logs <container-id>
+
+//see current logs
+docker logs -ft <container-id>
+
+//stop container
+docker stop <container-id>
+
+//if get error during stop docker
+sudo aa-remove-unknown
+
+//start container
+docker start <container-id>
+
+//remove a specific container
+docker rm <container-id>
+
+//remove all container
+docker rm $(docker ps -a -q)
+
+//remove an image
+docker rmi <image-id>
+
+//remove all images
+docker rmi (docker images -q)
+
+
