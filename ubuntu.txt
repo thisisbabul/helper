@@ -141,3 +141,10 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 
 //change root password
 sudo passwd root
+
+//set automatic indentation in vim
+set autoindent expandtab tabstop=2 shiftwidth=2
+
+//transfer files from one server to another
+scp <file> <username>@<IP address or hostname>:<Destination>
+scp "TPS Reports.odw" joe@laptop:Desktop/

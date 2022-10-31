@@ -1,4 +1,33 @@
+//install
+sudo apt install nginx
+
 //version
-ngix -v
+nginx -v
+nginx -V #more details
+
+//start
+systemctl start nginx
+
+//stop
+systemctl stop nginx
+
+//kill all nginx services
+killall -9 nginx
+
+//quit
+systemctl quit nginx
+
+//restart
+systemctl restart nginx
+
+//reload
+systemctl reload nginx
+
+//status
+systemctl status nginx
+
+//test nginx configuration
+nginx -t
+nginx -T #more details
 
 

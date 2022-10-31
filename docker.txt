@@ -64,6 +64,9 @@ docker rm $(docker ps -a -q)
 docker rmi <image-id>
 
 //remove all images
-docker rmi (docker images -q)
+docker rmi $(docker images -q)
+
+//loggin into the container
+docker exec -it <container-id> /bin/bash
 
 
