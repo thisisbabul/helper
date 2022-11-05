@@ -1,0 +1,19 @@
+What is RabbitMQ?
+
+RabbitMQ is a message broker that orginally implements the Advance Message Queuing Protocol (AMQP).
+
+AMQP standardizes messaging using Producers, Broker and Consumers.
+
+AMQP standards was designed with the following main characteristics.
+- Security
+- Reliability
+- Interoperability
+
+
+Key Features:
+
+Security: Support Authentication, Authorization, LDAP and TLS via RabbitMQ plugins.
+
+Reliability: Confirms the message was successfully delivered to the message broker and confirms that the message was successfully processed by the consumer.
+
+Interoperability: Message is transfer as stream of bytes so any client can operate on it irrespective of any languages.
