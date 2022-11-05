@@ -148,3 +148,6 @@ set autoindent expandtab tabstop=2 shiftwidth=2
 //transfer files from one server to another
 scp <file> <username>@<IP address or hostname>:<Destination>
 scp "TPS Reports.odw" joe@laptop:Desktop/
+
+//remove swap file
+rm -rf ~/.vimrc.swp
