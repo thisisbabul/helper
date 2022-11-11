@@ -1,0 +1,71 @@
+What is RabbitMQ?
+
+RabbitMQ is a message broker that orginally implements the Advance Message Queuing Protocol (AMQP).
+
+AMQP standardizes messaging using Producers, Broker and Consumers.
+
+AMQP standards was designed with the following main characteristics.
+- Security
+- Reliability
+- Interoperability
+
+
+Key Features:
+
+Security: Support Authentication, Authorization, LDAP and TLS via RabbitMQ plugins.
+
+Reliability: Confirms the message was successfully delivered to the message broker and confirms that the message was successfully processed by the consumer.
+
+Interoperability: Message is transfer as stream of bytes so any client can operate on it irrespective of any languages.
+
+//install
+https://www.cherryservers.com/blog/how-to-install-and-start-using-rabbitmq-on-ubuntu-22-04
+apt-get install curl gnupg apt-transport-https -y
+
+curl -1sLf "https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/com.rabbitmq.team.gpg > /dev/null
+curl -1sLf "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xf77f1eda57ebb1cc" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg > /dev/null
+curl -1sLf "https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/io.packagecloud.rabbitmq.gpg > /dev/null
+
+//need the following urls /etc/apt/sources.list.d/rabbitmq.list
+deb [signed-by=/usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg] http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/ubuntu jammy main
+deb-src [signed-by=/usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg] http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/ubuntu jammy main
+deb [signed-by=/usr/share/keyrings/io.packagecloud.rabbitmq.gpg] https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu/ jammy main
+deb-src [signed-by=/usr/share/keyrings/io.packagecloud.rabbitmq.gpg] https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu/ jammy main
+
+apt-get update -y
+
+apt-get install -y erlang-base \
+    erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets \
+    erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key \
+    erlang-runtime-tools erlang-snmp erlang-ssl \
+    erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+    
+apt-get install rabbitmq-server -y --fix-missing
+
+systemctl status rabbitmq-server
+
+//Enable RabbitMQ Management Console
+rabbitmq-plugins list
+rabbitmq-plugins enable rabbitmq_management
+
+//Set Up RabbitMQ Administrative User
+rabbitmqctl add_user thebigrabbit MyS3cur3Passwor_d
+rabbitmqctl set_user_tags thebigrabbit administrator
+rabbitmqctl delete_user guest
+rabbitmqctl list_users
+
+//Create RabbitMQ Virtual Host
+rabbitmqctl add_vhost cherry_broker
+rabbitmqctl list_vhosts
+rabbitmqctl delete_vhost /
+
+//Assign User Permissions on a Virtual Host
+sudo rabbitmqctl set_permissions -p <virtual_host> <user_name> <permissions>
+sudo rabbitmqctl set_permissions -p cherry_broker thebigrabbit ".*" ".*" ".*"
+
+-p is used to define the virtual host.
+The first permission argument “.*” grants configuration permissions on all virtual host entities. It allows you to declare exchanges, queues, etc.
+The second permission argument “.*” grants write permissions on all virtual host entities. It allows you to create bindings, publish messages etc.
+The third permission argument “.*” grants read permissions. It allows you to read queues, consume messages, etc.
+
+sudo rabbitmqctl list_permissions -p cherry_broker
