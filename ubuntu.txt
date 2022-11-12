@@ -151,3 +151,6 @@ scp "TPS Reports.odw" joe@laptop:Desktop/
 
 //remove swap file
 rm -rf ~/.vimrc.swp
+
+//copy folder
+cp -r /path/to/directory /path/to/location/new-name
