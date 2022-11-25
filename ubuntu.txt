@@ -85,6 +85,11 @@ https://github.com/nodesource/distributions/blob/master/README.md //need see bef
 curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+//uninstall node js
+sudo apt remove nodejs
+sudo apt purge nodejs
+sudo apt autoremove
+
 //install gitlab
 https://www.youtube.com/watch?v=ydzZJZBvE2o
 https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/gitlab-ce_14.3.3-ce.0_amd64.deb
