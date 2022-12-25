@@ -159,3 +159,9 @@ rm -rf ~/.vimrc.swp
 
 //copy folder
 cp -r /path/to/directory /path/to/location/new-name
+
+//show all running port
+sudo lsof -i -P -n
+
+//show pid by port
+sudo lsof -i:8080

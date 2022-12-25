@@ -30,4 +30,5 @@ systemctl status nginx
 nginx -t
 nginx -T #more details
 
-
+//uninstall nginx
+https://www.cyberciti.biz/faq/remove-uninstall-nginx-from-ubuntu-debian-linux-apt-get-command/
