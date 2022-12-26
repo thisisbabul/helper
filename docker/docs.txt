@@ -1,0 +1,10 @@
+what is docker?
+Docker is a tool designed to make it easier to build, deploy and run applicaions by using containers.
+
+Problem before docker
+- Dependency version mismatch from one environment to another
+- Library corrupted
+- Software upgrade
+
+How docker resovle this issue?
+Containers allow a developer to package up an applicaion with all of the parts it needs such as libraries and other dependencies and ship it all out as one package.
