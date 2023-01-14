@@ -165,3 +165,7 @@ sudo lsof -i -P -n
 
 //show pid by port
 sudo lsof -i:8080
+
+//install java 17
+sudo apt update
+sudo apt install -y openjdk-17-jdk
