@@ -69,4 +69,12 @@ docker rmi $(docker images -q)
 //loggin into the container
 docker exec -it <container-id> /bin/bash
 
+//docker permission
+If you want to run docker as non-root user then you need to add it to the docker group.
+1.Create the docker group if it does not exist
+  sudo groupadd docker
+2.Add your user to the docker group.
+  sudo usermod -aG docker $USER
+3.Run the following command or Logout and login again and run (that doesn't work you may need to reboot your machine first)
+  newgrp docker
 
