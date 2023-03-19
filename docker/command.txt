@@ -60,6 +60,9 @@ docker rm <container-id>
 //remove all container
 docker rm $(docker ps -a -q)
 
+//remove all stopped cotainers
+docker system prune
+
 //remove an image
 docker rmi <image-id>
 
