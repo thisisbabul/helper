@@ -16,9 +16,10 @@ Docker makes it really easy to install and run software without worring about se
 
 Image
 Single file with all the deps and config required to run a program.
+Image is a template for creating and environment of your choice or snapshot or has everything need to run your apps
 
 Container
-Instance of an image
+Running instance of an image
 
 Docker CLI
 Tool that we are going to issue commands to
