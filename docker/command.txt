@@ -61,6 +61,9 @@ docker rm <container-id>
 //remove all container
 docker rm $(docker ps -a -q)
 
+//forcefully remove all containers
+docker rm -f $(docker ps -aq)
+
 //remove all stopped cotainers
 docker system prune
 
