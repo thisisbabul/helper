@@ -37,6 +37,10 @@ docker ps
 //all containers
 docker ps -a
 
+//format docker containers
+export FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nImage\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+docker ps -a --format=$FORMAT
+
 //inspect container
 docker inspect <container-id>
 
