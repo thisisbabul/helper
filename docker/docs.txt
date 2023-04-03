@@ -27,3 +27,7 @@ Tool that we are going to issue commands to
 Docker Daemon
 Tool that is responsible for creating images, running containers etc.
 
+Volumes
+- Allows sharing of data. Files and Folders
+- Between host and container
+- Between containers
