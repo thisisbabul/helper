@@ -80,6 +80,10 @@ docker rmi $(docker images -q)
 //loggin into the container
 docker exec -it <container-id> /bin/bash
 
+//volumes
+docker run --name <container-name> -v <conent directory:docker share directory:ro> -d -p <host-port>:<port-container> <image-name>:tag
+docker run --name website -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
+
 //docker permission
 If you want to run docker as non-root user then you need to add it to the docker group.
 1.Create the docker group if it does not exist
