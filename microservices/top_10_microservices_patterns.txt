@@ -1,0 +1,21 @@
+Here are some common microservices patterns:
+
+▶️ API Gateway Pattern: This pattern involves having a single entry point for all client requests, which then routes those requests to the appropriate microservice.
+
+▶️ Circuit Breaker Pattern: This pattern is used to handle failures in a microservice architecture. When a microservice fails or becomes unresponsive, the circuit breaker trips and redirects requests to a fallback service.
+
+▶️ Service Registry Pattern: This pattern is used to keep track of all the services in a microservices architecture. The registry acts as a central directory for service discovery.
+
+▶️ Service Mesh Pattern: This pattern involves adding a layer of infrastructure between microservices to handle cross-cutting concerns such as service discovery, load balancing, and security.
+
+▶️ Event-Driven Architecture Pattern: This pattern involves using events to communicate between microservices. Each microservice can publish events and subscribe to events published by other microservices.
+
+▶️ Saga Pattern: This pattern is used to manage transactions that span multiple microservices. It involves breaking the transaction into smaller, individual steps and using compensating actions to undo completed steps if an error occurs.
+
+▶️ Bulkhead Pattern: This pattern is used to isolate failures in a microservices architecture. Each microservice is placed in a separate container, so if one microservice fails, it does not affect other microservices.
+
+▶️ Sidecar Pattern: This pattern involves deploying a separate container alongside each microservice to handle cross-cutting concerns such as logging, monitoring, and security.
+
+▶️ CQRS Pattern: This pattern involves separating the read and write models in a microservices architecture. The read model is optimized for querying data, while the write model is optimized for updating data.
+
+▶️ Strangler Pattern: This pattern involves gradually replacing a monolithic application with microservices by gradually adding new microservices and removing functionality from the monolith.
