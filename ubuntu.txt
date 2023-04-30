@@ -160,6 +160,9 @@ rm -rf ~/.vimrc.swp
 //copy folder
 cp -r /path/to/directory /path/to/location/new-name
 
+//copy folder one server to another server
+scp -r /path/to/directory someuser@serverB:/path/to/files/.
+
 //show all running port
 sudo lsof -i -P -n
 
