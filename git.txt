@@ -46,3 +46,27 @@ git remote set-url origin new.git.url/here
 
 //local changes tab in intellij idea
 https://intellij-support.jetbrains.com/hc/en-us/community/posts/360008229959-Version-control-local-changes-tab-missing-in-2020-1
+
+======note=====
+//initialized new repository
+git init
+
+//all file from working directory to stage
+git add --all or git add -A
+
+//all file stage to working directory
+git reset
+
+//current working directory files to stage
+git add .
+
+//all files working directory to stage without deleted files
+git add *
+
+//stage to local repository
+git commit -m "message"
+
+//local repository to working directory
+git reset HEAD~
+
+
