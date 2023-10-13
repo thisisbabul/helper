@@ -1,0 +1,20 @@
+-> Actuators is one of the feature avaiable in spring boot.
+-> Actuators are used for providing production ready features for the application.
+-> By using actuators we can monitor and manage our application
+	-> What is health of our application?
+	-> How many beans loaded by our application?
+	-> What config props loaded by our application?
+	-> What is Heap info of our application?
+	-> How many threads running in our application?
+	-> How many URL mappings available in our application?
+
+//include endpoints
+management.endpoints.web.exposure.include=*
+//exclude endpoints (excluded beans, mappings)
+management.endpoints.web.exposure.exclude=beans,mappings
+//enable shutdown endpoint (POST request)
+management.endpoint.shutdown.enabled=true
+
+
+All actuator endpoints are pre-defined and they are binded to HTTP GET request.
+
