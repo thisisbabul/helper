@@ -5,6 +5,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 docker --version //for specify version
 docker version
 
+//login
+docker login
+
 //permission
 sudo chmod 666 /var/run/docker.sock
 
