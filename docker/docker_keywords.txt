@@ -1,0 +1,40 @@
+FROM: It indicates base image to run our application.
+example: FROM ubuntu
+
+MAINTAINER: It represents who is author of dockerfile.
+example: MAINTAINER babul <babul@gmail.com>
+
+COPY: It is used to copy file/folder to image while creating an image.  
+example: COPY <source> <destination>
+
+ADD: It is also use to copy file/folder to image while create an image, also can download file from remote location (http) and will extract tar file while copying to image.
+example: ADD <source> <destination>, ADD <url-to-download> <destination>
+
+RUN: It is used to execute commands. RUN command instructions will execute while creating an image and multiple instructions are allowed.
+example: RUN mkdir workpace
+
+CMD: It is also used to execute commands. CMD instructions will execute while creating container and multiple instructions are allowed but will execute last one.
+example: CMD java -jar test.jar
+
+ENTRYPOINT: CMD instructions we can override where as ENTRYPOINT instructions we can't override.
+example: ENTRYPOINT["echo", "Welcome to entrypoint"]
+
+ENV: It is used to set environment variables.
+example: ENV <key> <value>
+
+LABEL: It will represent data in key value pair and used to add meta data for our image.
+example: LABEL branchName release
+
+USER: We can set user for image/container.
+
+WORKDIR: It is used to set working dirctory for an image/container.
+
+EXPOSE: It represent on which port number our container in running.
+
+VOLUME: It is used for data storage.
+
+ARG: It is used to avoid hard coded values in Dockerfile.
+example: ARG branch=develop
+	 LABEL branch $branch
+	 
+

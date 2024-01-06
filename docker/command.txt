@@ -25,6 +25,7 @@ docker images
 //building an image
 docker build -t <image-name> <location-of-docker-file>
 docker build -t my-httpd .
+docker build -f Dockerfile_name -t my-httpd . //if changed docker file name
 
 //inspect image
 docker inspect <image-id>
