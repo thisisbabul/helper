@@ -1,0 +1,7 @@
+Deploying
+Scheduling
+Scalling
+Load balancing
+Batch execution
+Rollbacks
+Monitoring
