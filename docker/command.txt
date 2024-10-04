@@ -84,6 +84,12 @@ docker rmi $(docker images -q)
 //loggin into the container
 docker exec -it <container-id> /bin/bash
 
+//get container file structure
+docker exec <container-id> ls /
+
+//install process
+apt install procps
+
 //volumes
 docker run --name <container-name> -v <conent directory:docker share directory:ro> -d -p <host-port>:<port-container> <image-name>:tag
 docker run --name website -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest

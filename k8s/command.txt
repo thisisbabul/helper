@@ -1,0 +1,56 @@
+//install minikube
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
+
+//check minikube version
+minikube version
+
+//start minikube
+minikube start
+
+//check status
+minikube status
+
+//read docker images from kubernates
+minikube docker-env
+eval $(minikube -p minikube docker-env)
+
+//set alias for kubectl
+alias kubectl="minikube kubectl --"
+
+//create deployment
+kubectl create deployment demo-app --image=demo-app:1.0 --port=8080
+
+//describe deployment
+kubectl describe deployment demo-app
+
+//get all pods
+kubectl get pods
+
+//show log
+kubectl logs demo-app-774cf5cc67-4ff57
+
+//delete deployment
+kubectl delete deployment demo-app
+
+//create service
+kubectl expose deployment demo-app --type=NodePort
+
+//show services
+kubectl get service
+
+//get service host url
+minikube service demo-app --url
+
+//delete service
+kubectl delete service demo-app
+
+//crate pods using yml file
+kubectl apply -f demo-app.yml
+
+//delete pods using yml file
+kubectl delete -f demo-app.yml
+
+//get master ip
+kubectl get nodes -o wide / minikube ip
+
+
