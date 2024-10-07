@@ -98,6 +98,9 @@ docker run --name website -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx
 docker run --name <container-name> --volumes-from <source-container-name> -d -p <host-port>:<port-container> <image-name>:tag
 docker run --name website-copy --volumes-from website -d -p 8081:80 nginx:latest
 
+//mysql console
+mysql -h <docker-ip> -u root -p<password>
+
 //docker permission
 If you want to run docker as non-root user then you need to add it to the docker group.
 1.Create the docker group if it does not exist
